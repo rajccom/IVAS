@@ -24,3 +24,5 @@ $result2 = $statement2->fetchAll();
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/owl.carousel.min.css" rel="stylesheet">
+<link href="css/menu.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/ionicons.min.css">

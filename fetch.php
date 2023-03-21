@@ -2,7 +2,7 @@
 
 //fetch.php
 //include 'database.php';
-$connect = new PDO("mysql:host=127.0.0.1;dbname=wockhardt_test", "root", "");
+$connect = new PDO("mysql:host=localhost;dbname=wockhardt_test", "root", "")
 
 if(isset($_POST["query"]))
 {

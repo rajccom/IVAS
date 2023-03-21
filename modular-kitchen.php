@@ -5,15 +5,7 @@
 <link rel="canonical" href="" />
 
 <?php include 'inc/header.php'; ?>
-<header class="py-4">
-<div class="container">
 
-<img src="images/logo.png" alt="" title="">
-
-</div>
-
-
-</header>
  
 <div class="bg-body-light-gray">
 

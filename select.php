@@ -2,7 +2,7 @@
  if(isset($_POST["product_id"]))  
  {  
       $output = '';  
-      $connect = mysqli_connect("127.0.0.1", "root", "", "wockhardt_test");  
+      $connect = mysqli_connect("localhost", "root", "", "wockhardt_test");  
       $query = "SELECT * FROM product WHERE product_id = '".$_POST["product_id"]."'";  
       $result = mysqli_query($connect, $query);  
       $output .= '  

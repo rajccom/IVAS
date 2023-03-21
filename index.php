@@ -5,9 +5,7 @@
 <link rel="canonical" href="" />
 
 <?php include 'inc/header.php'; ?>
-<header>
-<div class="container"><img src="images/logo.png" alt="" title=""></div>
-</header>
+
  
 		  
 

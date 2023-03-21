@@ -48,6 +48,7 @@
 
 <script src="js/owl.carousel.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/menu.js"></script>
 
 <script>
             jQuery(document).ready(function($) {
@@ -66,3 +67,13 @@
               });
             });
           </script>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
