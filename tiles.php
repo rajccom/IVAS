@@ -15,7 +15,6 @@
 <header class="py-4">
 <div class="container">
 
-<img src="images/logo.png" alt="" title="">
 <form method="POST" class="form-inline">
          <div class="row">
             <div style="margin-left:801px">

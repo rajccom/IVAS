@@ -182,7 +182,7 @@ footer .copyright{ border-top: 1px solid #fff; padding-top: 15px;}
   position: absolute;
   top: 20px;
   right: 45px;
-  font-size: 60px;
+  font-size: 60px; z-index: 999;
 }
 
 @media screen and (max-height: 450px) {
