@@ -24,7 +24,7 @@
 		<div class="top-banner-form px-4 py-4 rounded">
 		<form id="enquiry-form" action="mail.php"  method="POST">
     <h3>Get a Quote</h1>
-	
+
 	 <div class="form-floating">
       <input type="text" name="sname" class="form-control" placeholder="Name" oninput="this.value = this.value.replace(/[^a-zA-Z ]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" required/>
     </div>
@@ -46,7 +46,7 @@
         <input type="checkbox" value="remember-me" required>   Send me updates
       </label>
     </div>
-    <button class="w-100 btn btn-lg btn-primary" type="submit" name="submit" value="Submit">Call Me Back</button>
+    <button class="w-100 btn btn-lg btn-primary rounded-circle" type="submit" name="submit" value="Submit">Call Me Back</button>
 
   </form>
   
@@ -310,102 +310,103 @@ Your stunning kitchen will last for years to come
 </div>
 	
 </div>
- 
-<?php
-    $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-?>
 
-<form class="form" id="form2" name="form2" method="post" action="<?php echo $actual_link; ?>">
-<fieldset>
-  <div class="container my-5">
-  <h2>Find a Dealer Near You ?</h2>
-  
-  <div class="dealer-filter my-5">
-  <div class="row featurette">
+<div class="container faq my-5">
+<h2>FAQs</h2>
+<div class="row">
+<div class="col-sm-12 py-3 px-3">
+  <div class="accordion" id="accordionExample1">
 
-  <div class="col-md-4">
-  <label>State</label>
-  <select name="search_filter2" id="search_filter2">
-      <option value=" " selected disabled hidden> Select </option>
-      
-			<?php	
-			foreach($result2 as $row)
-			{
-				// echo '<option value="'.$row["state"].'" data-live-search="true">'.$row["state"].'</option>';	
-        echo ("<option value=\"{$row['state']}\" " . ($pmenu == $row['state'] ? " selected" : "") . ">{$row['state']}</option>");
-			}
-			?>
-			</select>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="faq-1">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f1" aria-expanded="false" aria-controls="collapseTwo">
+        What are the differences between modular kitchen and carptenter kitchen?
+      </button>
+    </h2>
+    <div id="f1" class="accordion-collapse collapse show" aria-labelledby="faq-1" data-bs-parent="#accordionExample1">
+      <div class="accordion-body">
+       one-stop destination to seek the best interior designers who will help you design the home of your dreams. We are an interior design company that takes care of the design, delivery and installation of interiors for various spaces. That is not all. When you book home interiors with us, we offer end to end services that include modular interiors, installation of false ceilings, civil work, painting, electrical work, plumbing services, flooring and tiling.
       </div>
-
-<div class="col-md-4">
-<label style="margin-left:20px">City</label>
-<select name="search_filter" id="search_filter">
-      <option value="none" selected disabled hidden> Select </option>
-			<?php
-			foreach($result as $row)
-			{
-				//echo '<option value="'.$row["location"].'" data-live-search="true" >'.$row["location"].'</option>';	
-        echo ("<option value=\"{$row['location']}\" " . ($cmenu == $row['location'] ? " selected" : "") . ">{$row['location']}</option>");
-			}
-			?>
-			</select>
-			</div>
-
-			<input type="hidden" name="hidden_location" id="hidden_location" />
-			<input type="hidden" name="hidden_state" id="hidden_state" />
-			<!--<input type="hidden" name="hidden_city" id="hidden_city" />-->
-
-			<div style="clear:both"></div>
-			<br />
- <!-- <div class="col-md-4">
-  <select name="cars" id="cars">
-    <option value="">Select State</option>
-    <option value="Maharashtra">Maharashtra</option>
-    <option value="Maharashtra">Maharashtra</option>
-	<option value="Maharashtra">Maharashtra</option>
-	<option value="Maharashtra">Maharashtra</option>
-  </select>
+    </div>
+  </div>
+ 
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="faq2">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f2" aria-expanded="false" aria-controls="collapseTwo">
+        Why do I need a modular kitchen?
+      </button>
+    </h2>
+    <div id="f2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#accordionExample1">
+      <div class="accordion-body">
+       one-stop destination to seek the best interior designers who will help you design the home of your dreams. We are an interior design company that takes care of the design, delivery and installation of interiors for various spaces.
+      </div>
+    </div>
   </div>
   
-   <div class="col-md-4">
-  <select name="cars" id="cars">
-    <option value="">Select State</option>
-    <option value="Maharashtra">Maharashtra</option>
-    <option value="Maharashtra">Maharashtra</option>
-	<option value="Maharashtra">Maharashtra</option>
-	<option value="Maharashtra">Maharashtra</option>
-  </select>
-  </div> -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="faq3">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f3" aria-expanded="false" aria-controls="collapseTwo">
+        What are the differences between modular kitchen and carptenter kitchen?
+      </button>
+    </h2>
+    <div id="f3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#accordionExample1">
+      <div class="accordion-body">
+       one-stop destination to seek the best interior designers who will help you design the home of your dreams. We are an interior design company that takes care of the design, delivery and installation of interiors for various spaces. That is not all. When you book home interiors with us, we offer end to end services that include modular interiors, installation of false ceilings, civil work, painting, electrical work, plumbing services, flooring and tiling.
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="faq4">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f4" aria-expanded="false" aria-controls="collapseTwo">
+       Why do I need a modular kitchen?
+      </button>
+    </h2>
+    <div id="f4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#accordionExample1">
+      <div class="accordion-body">
+       one-stop destination to seek the best interior designers who will help you design the home of your dreams. We are an interior design company that takes care of the design, delivery and installation of interiors for various spaces. That is not all. When you book home interiors with us, we offer end to end services that include modular interiors, installation of false ceilings, civil work, painting, electrical work, plumbing services, flooring and tiling.
+      </div>
+    </div>
+  </div>
+  
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="faq5">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f5" aria-expanded="false" aria-controls="collapseTwo">
+       What are the differences between modular kitchen and carptenter kitchen?
+      </button>
+    </h2>
+    <div id="f5" class="accordion-collapse collapse" aria-labelledby="faq5" data-bs-parent="#accordionExample1">
+      <div class="accordion-body">
+      one-stop destination to seek the best interior designers who will help you design the home of your dreams. We are an interior design company that takes care of the design, delivery and installation of interiors for various spaces. That is not all. When you book home interiors with us, we offer end to end services that include modular interiors, installation of false ceilings, civil work, painting, electrical work, plumbing services, flooring and tiling.
+      </div>
+    </div>
+  </div>
 
-  </div>
-  </div>
-  
-  <div class="row dealer-result">
-	
-  </div>		 
-   </div>
-  
-  
-  </div>
-</fieldset>	  
-</form>
+</div>
+</div>
+</div>
+</div>
+
+
+<?php include 'inc/dealer.php'; ?>
+
 		  
-<div class="container my-5">
+<div class="container my-5 get-in-touch">
 <div class="alert gray-dark-bg py-4 px-4">
 <h3>Get in touch with an expert</h3>
 <p class="mb-0">This is dummy copy please do not read it. This is dummy copy please do not read it.</p>
 </div></div>
 		  
 <div class="container my-5 ">
-<div class="row featurette">
- <div class="col-md-6">
-       <img src="images/blog.jpg" alt="" title="" class="rounded-left rounded w-100">
+<div class="row featurette align-items-center shadow-sm mx-0 rounded">
+ <div class="col-md-6 px-0">
+       <img src="images/blog.jpg" alt="" title="" class="w-100">
       </div>
-      <div class="col-md-6 border border-left-0 rounded rounded-right">
-        <h2 class="featurette-heading fw-normal lh-1">From our blog</span></h2>
-        <p class="lead">This is dummy copy please do not read it.</p>
-		<p><a class="btn btn-lg btn-primary" href="#">Read Now</a></p>
+      <div class="col-md-6 px-5 py-5">
+        <h2 class="mb-1">From our blog</span></h2>
+        <p>This is dummy copy please do not read it.</p>
+		<div class="blog-btn"><a class="btn btn-lg btn-dark rounded-circle" href="#">Read Now</a></div>
       </div>
      
     </div>
