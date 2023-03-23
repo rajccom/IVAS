@@ -124,7 +124,7 @@ Your stunning kitchen will last for years to come
 
 <div class="container my-5">
 <div class="row">
-<h2>Your Modular Kitchen comes with all these things</h2>
+<h2>Your Modular Kitchen comes with all these things </h2>
 <div class="col-sm-8">
 <img src="images/Your-Modular-Kitchen-comes-with-all-these-things.jpg" alt="" class="img-fluid rounded">
 </div>
