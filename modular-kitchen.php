@@ -416,9 +416,10 @@ Your stunning kitchen will last for years to come
 	
 
 <?php include 'inc/footer-js.php'; ?>
+<script type="text/javascript" src="js/location.js"></script>
 <?php include 'inc/footer.php'; ?>
 
-<script type="text/javascript" src="js/location.js"></script>
+
 
 
 

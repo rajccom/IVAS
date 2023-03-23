@@ -392,6 +392,26 @@
 	
 
 <?php include 'inc/footer-js.php'; ?>
+
+<script src="js/owl.carousel.js"></script>
+<script>
+            jQuery(document).ready(function($) {
+              $('.nonloop').owlCarousel({
+                center: true,
+                items: 1,
+				nav: true,
+				lazyLoad:true,
+                loop: false,
+                margin: 10,
+                responsive: {
+                  600: {
+                    items: 4
+                  }
+                }
+              });
+            });
+          </script>
+
 <?php include 'inc/footer.php'; ?>
 
 

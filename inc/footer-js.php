@@ -44,29 +44,11 @@
 <p class="mb-0"><a href="#">Terms of Use</a>    |    <a href="#">Privacy Policy</a>   |    <a href="#">Site Experience</a>   |   <a href="#">Site Map</a></p>
 </div></div>
 </footer>
-<script  src="js/jquery.min.js"></script>
 
-<script src="js/owl.carousel.js"></script>
+<script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/menu.js"></script>
 
-<script>
-            jQuery(document).ready(function($) {
-              $('.nonloop').owlCarousel({
-                center: true,
-                items: 1,
-				nav: true,
-				lazyLoad:true,
-                loop: false,
-                margin: 10,
-                responsive: {
-                  600: {
-                    items: 4
-                  }
-                }
-              });
-            });
-          </script>
 
 <script>
 function openNav() {

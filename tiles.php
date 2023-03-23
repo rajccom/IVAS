@@ -5,9 +5,7 @@
 <meta name="description" content="" />
 <link rel="canonical" href="" />
 
-<script src="js/jquery-1.10.2.min.js"></script>
 
-<script src="js/search.js"></script>
 
 
 
@@ -171,7 +169,13 @@
 	
 
 <?php include 'inc/footer-js.php'; ?>
+
+
+
+<script src="js/search.js"></script>
+<script type="text/javascript" src="js/location.js"></script>
+
 <?php include 'inc/footer.php'; ?>
 
 
-<script type="text/javascript" src="js/location.js"></script>
+
