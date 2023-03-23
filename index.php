@@ -7,7 +7,7 @@
 <?php include 'inc/header.php'; ?>
 
  
-		  
+<div class="bg-body-light-gray">
 
 
 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -302,96 +302,37 @@
           </div>
   </div>
   
-  <div class="container my-5">
-  <h2>Find a Dealer Near You</h2>
-  
-  <div class="dealer-filter my-5">
-  <div class="row featurette">
-
- <div class="col-md-4">
-  <select name="cars" id="cars">
-    <option value="">Select State</option>
-    <option value="Maharashtra">Maharashtra</option>
-    <option value="Maharashtra">Maharashtra</option>
-	<option value="Maharashtra">Maharashtra</option>
-	<option value="Maharashtra">Maharashtra</option>
-  </select>
-  </div>
-  
-   <div class="col-md-4">
-  <select name="cars" id="cars">
-    <option value="">Select State</option>
-    <option value="Maharashtra">Maharashtra</option>
-    <option value="Maharashtra">Maharashtra</option>
-	<option value="Maharashtra">Maharashtra</option>
-	<option value="Maharashtra">Maharashtra</option>
-  </select>
-  </div>
-
-  </div>
-  </div>
-  
-   <div class="dealer-result">
-<div class="row">
-  <div class="col-sm-4">
-<div class="card">
-  <div class="card-body">
-  <h4 class="card-title">Mumbai - Andheri</h4>
-    <h5 class="card-title">4th Floor, Plot No, Opal Square, C-1, SG Barve Rd, opp. Railadevi TMC Office, Wagle Industrial Estate, Thane West, Thane, Maharashtra 400604</h5>
-	<div class="get-direction">
-    <a href="#" class="">get directions</a></div>
-  </div>
-</div></div>
-<div class="col-sm-4">
-<div class="card">
-  <div class="card-body">
-  <h4 class="card-title">Mumbai - Andheri</h4>
-    <h5 class="card-title">4th Floor, Plot No, Opal Square, C-1, SG Barve Rd, opp. Railadevi TMC Office, Wagle Industrial Estate, Thane West, Thane, Maharashtra 400604</h5>
-	<div class="get-direction">
-    <a href="#" class="">get directions</a></div>
-  </div>
-</div></div>
-<div class="col-sm-4">
-<div class="card">
-  <div class="card-body">
-  <h4 class="card-title">Mumbai - Andheri</h4>
-    <h5 class="card-title">4th Floor, Plot No, Opal Square, C-1, SG Barve Rd, opp. Railadevi TMC Office, Wagle Industrial Estate, Thane West, Thane, Maharashtra 400604</h5>
-	<div class="get-direction">
-    <a href="#" class="">get directions</a></div>
-  </div>
-</div></div>
-
-
-</div>	</div>	 
-   </div>
-  
-  
-  </div>
+  <?php include 'inc/dealer.php'; ?>
 		  
-<div class="container my-5">
-<div class="alert alert-dark" role="alert">
-<h5>Get in touch with an expert</h5>
-<p>This is dummy copy please do not read it. This is dummy copy please do not read it.</p>
+  <div class="container my-5 get-in-touch">
+<div class="alert gray-dark-bg py-4 px-4">
+<h3>Get in touch with an expert</h3>
+<p class="mb-0">This is dummy copy please do not read it. This is dummy copy please do not read it.</p>
 </div></div>
 		  
 <div class="container my-5 ">
-<div class="row featurette">
- <div class="col-md-6">
-       <img src="images/blog.jpg" alt="" title="" class="rounded-left rounded w-100">
+<div class="row featurette align-items-center shadow-sm mx-0 rounded">
+ <div class="col-md-6 px-0">
+       <img src="images/blog.jpg" alt="" title="" class="w-100">
       </div>
-      <div class="col-md-6 border border-left-0 rounded rounded-right">
-        <h2 class="featurette-heading fw-normal lh-1">From our blog</span></h2>
-        <p class="lead">This is dummy copy please do not read it.</p>
-		<p><a class="btn btn-lg btn-primary" href="#">Read Now</a></p>
+      <div class="col-md-6 px-5 py-5">
+        <h2 class="mb-1">From our blog</span></h2>
+        <p>This is dummy copy please do not read it.</p>
+		<div class="blog-btn"><a class="btn btn-lg btn-dark rounded-circle" href="#">Read Now</a></div>
       </div>
      
     </div>
 	</div>
+
+  <div style="clear:both;"></div>
+	
+  </div>
 	
 	
 	
 
 <?php include 'inc/footer-js.php'; ?>
+<script type="text/javascript" src="js/location.js"></script>
 
 <script src="js/owl.carousel.js"></script>
 <script>

@@ -34,7 +34,7 @@
 </div>
 
 <div class="follow-us mt-3">
-<p class="mb-0"><b>Follow us</b> <a href="#">F</a> <a href="#">I</a>  <a href="#">T</a>  <a href="#">IN</a> <a href="#">Y</a></p>
+<p class="mb-0"><b>Follow us</b> <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>  <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></p>
 </div>
 
 

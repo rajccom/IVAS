@@ -128,74 +128,74 @@ Your stunning kitchen will last for years to come
 <div class="col-sm-8">
 <img src="images/Your-Modular-Kitchen-comes-with-all-these-things.jpg" alt="" class="img-fluid rounded">
 </div>
-<div class="col-sm-4 py-3 px-3">
-  <div class="accordion" id="accordionExample">
+<div class="col-sm-4 things px-3">
+<div class="accordion" id="accordionExample">
+
+<div class="accordion-item">
+  <h2 class="accordion-header" id="BaseUnits">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#base1" aria-expanded="false" aria-controls="collapseTwo">
+      1. Base Units
+    </button>
+  </h2>
+  <div id="base1" class="accordion-collapse collapse show" aria-labelledby="BaseUnits" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+     Discover unlimited possibilities unlimited possibilities
+    </div>
+  </div>
+</div>
+
+
+<div class="accordion-item">
+  <h2 class="accordion-header" id="WallUnits">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#wall1" aria-expanded="false" aria-controls="collapseTwo">
+      2. Wall Units
+    </button>
+  </h2>
+  <div id="wall1" class="accordion-collapse collapse" aria-labelledby="WallUnits" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+     Discover unlimited possibilities unlimited possibilities
+    </div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header" id="TallUnits">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tall1" aria-expanded="false" aria-controls="collapseTwo">
+      3. Tall Units
+    </button>
+  </h2>
+  <div id="tall1" class="accordion-collapse collapse" aria-labelledby="TallUnits" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+     Discover unlimited possibilities unlimited possibilities
+    </div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header" id="Microwave-Oven">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#oven" aria-expanded="false" aria-controls="collapseTwo">
+      4. Microwave Oven
+    </button>
+  </h2>
+  <div id="oven" class="accordion-collapse collapse" aria-labelledby="Microwave-Oven" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+     Discover unlimited possibilities unlimited possibilities
+    </div>
+  </div>
+</div>
 
   <div class="accordion-item">
-    <h2 class="accordion-header" id="Base-Units">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        1. Base Units
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="Base-Units" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-       Discover unlimited possibilities unlimited possibilities
-      </div>
+  <h2 class="accordion-header" id="chimney">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chi1" aria-expanded="false" aria-controls="collapseTwo">
+     5. Chimney
+    </button>
+  </h2>
+  <div id="chi1" class="accordion-collapse collapse" aria-labelledby="chimney" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+     Discover unlimited possibilities unlimited possibilities
     </div>
   </div>
- 
-  
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="Wall-Units">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        2. Wall Units
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="Wall-Units" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-       Discover unlimited possibilities unlimited possibilities
-      </div>
-    </div>
-  </div>
-  
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="Tall-Units">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        3. Tall Units
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="Tall-Units" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-       Discover unlimited possibilities unlimited possibilities
-      </div>
-    </div>
-  </div>
-  
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="Microwave-Oven">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        4. Microwave Oven
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="Microwave-Oven" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-       Discover unlimited possibilities unlimited possibilities
-      </div>
-    </div>
-  </div>
-  
-    <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-       5. Chimney
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-       Discover unlimited possibilities unlimited possibilities
-      </div>
-    </div>
-  </div>
+</div>
 
 </div>
 </div>
@@ -227,13 +227,13 @@ Your stunning kitchen will last for years to come
 	
 </div>
 
-<div class="container my-5">
+<div class="container my-5 pricing">
 
 <h2>The kitchen you want, at the price you can afford.</h2>
 
 <div class="row">
   <div class="col-sm-4">
-<div class="card">
+<div class="card px-3 py-3">
   <div class="card-body">
   <h6 class="card-title">Economy Kitchens</h6>
     <h3 class="price">₹99,900/-</h3>
@@ -248,13 +248,15 @@ Your stunning kitchen will last for years to come
 <li>Best suited for small kitchens</li>
 </ul>
 </div>
-    <a href="#" class="btn btn-primary rounded-circle">Get a quote</a>
-  </div>
+
+<div class="get-a-quote">
+    <a href="#" class="btn btn-primary rounded-circle px-4">Get a quote</a>
+  </div>  </div>
 </div></div>
 
 
   <div class="col-sm-4">
-<div class="card">
+  <div class="card px-3 py-3">
   <div class="card-body">
   <h6 class="card-title">Mid Range Kitchens</h6>
     <h3 class="price">₹3,99,900/-</h3>
@@ -269,12 +271,13 @@ Your stunning kitchen will last for years to come
 <li>Best suited for small kitchens</li>
 </ul>
 </div>
-    <a href="#" class="btn btn-primary rounded-circle">Get a quote</a>
-  </div>
+<div class="get-a-quote">
+    <a href="#" class="btn btn-primary rounded-circle px-4">Get a quote</a>
+  </div> </div>
 </div></div>
 
   <div class="col-sm-4">
-<div class="card gray-dark-bg">
+<div class="card px-3 py-3 gray-dark-bg">
   <div class="card-body">
   <h6 class="card-title">Premium Kitchens</h6>
     <h3 class="price">₹7,99,900/-</h3>
@@ -289,8 +292,9 @@ Your stunning kitchen will last for years to come
 <li>Best suited for small kitchens</li>
 </ul>
 </div>
-    <a href="#" class="btn btn-primary rounded-circle">Get a quote</a>
-  </div>
+<div class="get-a-quote">
+    <a href="#" class="btn btn-primary rounded-circle px-4">Get a quote</a>
+  </div>  </div>
 </div></div>
 
 

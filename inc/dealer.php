@@ -69,9 +69,8 @@
   
   <div class="row dealer-result">
 	
-  </div>		 
-   </div>
-  
- 
+  </div>	
+
 </form>
-  </div>
+  
+   </div>
