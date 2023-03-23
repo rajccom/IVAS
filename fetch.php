@@ -35,13 +35,13 @@ if($total_row > 0)
 	foreach($result as $row)
 	{
 		$output .= '
-        <div class="col-sm-4">
-        <div class="card">
+        <div class="col-sm-4 dealer-col-address mb-4">
+        <div class="card shadow-sm py-4 px-3">
           <div class="card-body">
           <h4 class="card-title">'.$row["title"].'</h4>
-            <h5 class="card-title">'.$row["address"].'</h5>
+            <p class="dealer-address">'.$row["address"].'</p>
             <div class="get-direction">
-            <a href="'.$row["direction"].'" target="blank" class="">Map</a></div>
+            <a href="'.$row["direction"].'" target="blank" class=""><i class="fa fa-map-marker" aria-hidden="true"></i> Get directions</a></div>
           </div>
         </div>
         </div>

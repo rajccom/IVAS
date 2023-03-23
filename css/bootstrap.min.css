@@ -139,6 +139,7 @@ footer .copyright{ border-top: 1px solid #fff; padding-top: 15px;}
 .faq .accordion-button{border: none; background:url(../images/border-pattern.png) repeat-x bottom; font-size: 18px; font-weight: 600;}
 .faq .accordion-button:not(.collapsed){ box-shadow:none;}
 .get-in-touch h3{  color: #fff; font-size: 24px;}
+.dealer-col-address .card{ border: none;}
 
 /* ------------- menu css ----------------- */
 
