@@ -1,5 +1,5 @@
 <?php
-$connect = new PDO("mysql:host=127.0.0.1:3306;dbname=wockhardt_test", "root", "");
+$connect = new PDO("mysql:host=localhost;dbname=wockhardt_test", "root", "");
 
 $query = "SELECT DISTINCT location FROM address_details ORDER BY location ASC";
  $query2 = "SELECT DISTINCT state FROM address_details where state_id=1 ORDER BY state  ASC";

@@ -1,6 +1,6 @@
 <?php
 //fetch2.php
-$connect = mysqli_connect("localhost", "root", "", "wockhardt_test");
+$connect = mysqli_connect("127.0.0.1:3306", "root", "", "wockhardt_test");
 if(isset($_POST["query"]))
 {
     $search = mysqli_real_escape_string($connect, $_POST["query"]);
@@ -40,6 +40,7 @@ if($_SERVER['REQUEST_METHOD']=='POST')
      $sql = "
      SELECT * FROM product
      WHERE product_name LIKE '%".$Search."%'
+     OR category LIKE '%".$Search."%'
      OR size LIKE '%".$Search."%'
      OR finish LIKE '%".$Search."%'
      OR concept LIKE '%".$Search."%'
@@ -52,8 +53,8 @@ if($_SERVER['REQUEST_METHOD']=='POST')
             <div style="border:1px solid #ccc; border-radius:5px; padding:16px; margin-bottom:16px; height:300px;"></a>
               <a href="#"><img src="images/'. $row['product_image'] .'" alt="" class="img-responsive" >
               <p align="center"><strong><a href="#">'. $row['product_name'] .'</a></strong></p>
-              <p>Category : '. $row['category'] .' MP<br />
-              Size : '. $row['size'] .' <br />
+              <p>Category : '. $row['category'] .' <br />
+              Size : '. $row['size'] .'<br />
               Finish : '. $row['finish'] .' <br />
               Concept : '. $row['concept'] .' </p>
               

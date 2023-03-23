@@ -2,8 +2,8 @@
 
 //fetch.php
 //include 'database.php';
-$connect = new PDO("mysql:host=localhost;dbname=wockhardt_test", "root", "")
-
+$connect = new PDO("mysql:host=localhost;dbname=wockhardt_test", "root", "");
+//$connect = mysqli_connect("127.0.0.1:3306", "root", "", "wockhardt_test");
 if(isset($_POST["query"]))
 {
 	$search_array = explode(",", $_POST["query"]);
@@ -15,10 +15,10 @@ if(isset($_POST["query"]))
 	ORDER BY id DESC
 	";
 }
-// else
-// {
-// 	$query = "SELECT * FROM address_details ORDER BY id DESC";
-// }
+else
+{
+	$query = "SELECT * FROM address_details ORDER BY id DESC";
+}
 
 $statement = $connect->prepare($query);
 
