@@ -69,3 +69,10 @@
 
 .owl-nav button.owl-prev{ float:left;}
 .owl-nav button.owl-next{ float:right;}
+.owl-carousel .item {  border-radius: 15px; overflow: hidden;}
+.owl-carousel .item img{  border-radius: 15px;}
+.owl-carousel .item .card img{border-radius: 0px;}
+.owl-carousel .item h4{ font-size: 24px; text-align: center; color: #fff;    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;    font-weight: 500;}

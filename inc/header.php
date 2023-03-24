@@ -7,7 +7,7 @@
 			<div class="container">
 				<div class="wrapper">
 					<div class="header-item-left">
-						<h1><a href="#" class="brand"><img src="images/logo.png" alt="" title=""></a></h1>
+						<h1><a href="index.php" class="brand"><img src="images/logo.png" alt="" title=""></a></h1>
 					</div>
 					<!-- Section: Navbar Menu -->
 					<div class="header-item-center">
@@ -19,7 +19,7 @@
 								<button type="button" class="menu-mobile-close"><i class="ion ion-ios-close"></i></button>
 							</div>
 							<ul class="menu-section">
-								<li><a href="#">MODULAR <br>KITCHEN</a></li>
+								<li><a href="modular-kitchen.php">MODULAR <br>KITCHEN</a></li>
 								<li class="menu-item-has-children">
 									<a href="#">Modular <br>Furniture <i class="ion ion-ios-arrow-down"></i></a>
 									<div class="menu-subs menu-mega menu-column-4">
