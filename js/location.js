@@ -147,3 +147,108 @@ window.addEventListener("click", function(event) {
   }
 });
 
+$(document).ready(function() {
+   
+  function fetch_post_data(product_id) {
+
+
+    var inp = $('.view_data');
+    var index = $(".filter_data .id-"+product_id).index();
+    
+    var next = inp[index + 1];
+    var prev = inp[index - 1];
+
+    var p_product_id = $(prev).attr("id");
+    var n_product_id = $(next).attr("id");
+
+    var disablePrev = !p_product_id ? 'disabled': '';
+    var disableNext = !n_product_id ? 'disabled': '';
+
+
+
+    var buttons = "<div align='center'><button type='button' name='previous' class='btn btn-warning btn-sm previous' id='"+p_product_id+"' "+disablePrev+" >Previous</button><button type='button' name='next' class='btn btn-warning btn-sm next' id='"+n_product_id+"' "+disableNext+">Next</button></div>";
+      $.ajax({
+          url: "get_product.php",
+          method: "GET",
+          data: {
+              product_id: product_id,
+          },
+          success: function(data) {
+
+            var api_data = JSON.parse(data);
+            var markUp = "<div class=table-responsive><img src='images/"+api_data.product_image+"'alt='' class='img-responsive' ><br><br>"+buttons+"<br><br><table class='table table-bordered'><tr><tr><td width=30%><label>Title</label><td width=70%>"+api_data.product_name+"<tr><td width=30%><label>Category</label><td width=70%>"+api_data.category+"<tr><td width=30%><label>Size</label><td width=70%>"+api_data.size+"<tr><td width=30%><label>Finish</label><td width=70%>"+api_data.finish+"<tr><td width=30%><label>Concept</label><td width=70%>"+api_data.concept+"</table></div>"
+
+              $('#product_detail').html(markUp);
+              $('#exampleModal').modal("show");
+          }
+      });
+  } 
+
+  $(document).on('click', '.view_data', function() {
+
+      var inp = $('.view_data');
+
+      //console.log(this);
+      var index = inp.index(this);
+
+      var next = inp[index + 1];
+      var prev = inp[index - 1];
+
+      //console.log($(prev).attr("id"));
+      //console.log($(next).attr("id"));
+
+      var product_id = $(this).attr("id");
+      var p_product_id = $(prev).attr("id");
+      var n_product_id = $(next).attr("id");
+      fetch_post_data(product_id);
+  });
+
+  /*
+  $(document).on('click', '.previous', function() {
+      var product_id = $(this).attr("id");
+
+      var inp = $('.view_data');
+
+
+
+      var index = inp.index(vv);
+      console.log(index);
+      var next = inp[index + 1];
+      var prev = inp[index - 1];
+
+      console.log($(prev).attr("id"));
+      console.log($(next).attr("id"));
+
+      fetch_post_data(product_id);
+  });
+
+  $(document).on('click', '.next', function() {
+      var product_id = $(this).attr("id");
+      var inp = $('.view_data');
+
+      var index = inp.index(this);
+      console.log(index);
+      var next = inp[index + 1];
+      var prev = inp[index - 1];
+
+      console.log($(prev).attr("id"));
+      console.log($(next).attr("id"));
+      fetch_post_data(product_id);
+  });
+  */
+
+  
+  $(document).on('click', '.previous', function() {
+    var product_id = parseInt($(this).attr("id"));
+    fetch_post_data(product_id);
+    
+  });
+
+  $(document).on('click', '.next', function() {
+    var product_id = parseInt($(this).attr("id"));
+    fetch_post_data(product_id);
+      
+  });
+
+
+});
