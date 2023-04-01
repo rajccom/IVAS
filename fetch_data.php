@@ -54,7 +54,7 @@ if(isset($_POST["action"]))
 		foreach($result as $row)
 		{
 			$output .= '
-			<div class="col-sm-4 col-lg-3 col-md-3 view_data"  id="'. $row['product_id'] .'">
+			<div class="col-sm-4 col-lg-3 col-md-3 view_data id-'. $row['product_id'] .'"  id="'. $row['product_id'] .'">
 				<div style="border:1px solid #ccc; border-radius:5px; padding:16px; margin-bottom:16px; height:300px;"></a>
 					<a href="#"><img src="images/'. $row['product_image'] .'" alt="" class="img-responsive" >
 					<p align="center"><strong><a href="#">'. $row['product_name'] .'</a></strong></p>
@@ -77,56 +77,3 @@ if(isset($_POST["action"]))
 }
 
 ?>
-
-<html>
-<body>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header"> 
-                     <button type="button" class="close" data-dismiss="modal">&times;</button>  
-                     <h4 class="modal-title">Product Details</h4>  
-                </div>  
-                <div class="modal-body" id="product_detail">  
-                </div>  
-                <div class="modal-footer">  
-                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>  
-                </div>  
-           </div>  
-      </div>  
- </div>
- <script>  
- $(document).ready(function(){  
-    //   $('.view_data').click(function(){  
-           //var product_id = $(this).attr("id");  
-		   function fetch_post_data(product_id){
-           $.ajax({  
-                url:"select.php",  
-                method:"post",  
-                data:{product_id:product_id},  
-                success:function(data){  
-                     $('#product_detail').html(data);  
-                     $('#exampleModal').modal("show");  
-                }  
-           });  
-      }//});  
-
-	$(document).on('click', '.view_data', function(){
-	var product_id = $(this).attr("id");
-  	fetch_post_data(product_id);
- 	});
-
- 	$(document).on('click', '.previous', function(){
- 	 var product_id = $(this).attr("id");
-  	fetch_post_data(product_id);
- 	});
-
- 	$(document).on('click', '.next', function(){
-  	var product_id = $(this).attr("id");
-  	fetch_post_data(product_id);
- 	});
-
- });  
- </script>
-</body>
-</html>
